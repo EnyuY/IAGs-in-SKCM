@@ -1,12 +1,6 @@
-# IAGs-in-SKCM
-Machine learning modeling and prognostic value analysis of invasion-related genes in cutaneous melanoma
+# Machine learning modeling and prognostic value analysis of invasion-related genes in cutaneous melanoma
 
-available as interactives Google Colab notebooks:
+**Authors**: Enyu Yang, Qianyun Ding, Xiaowei Fan, Haihan Ye, Cheng Xuan, Shuo Zhao, Qing Ji, Weihua Yu, Yongfu Liu, Jun Cao📧 , Meiyu Fang📧  <a href="https://orcid.org/0000-0001-9369-3640" target="_blank"><img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png"></a>, Xianfeng Ding📧 <a href="https://orcid.org/0000-0003-1119-3816" target="_blank"><img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png"></a>
 
-# [Machine learning modeling and prognostic value analysis of invasion-related genes in cutaneous melanoma](https://colab.research.google.com/drive/1PqikmkMxX1vdBiRFSEuL2ALBnTQL4gaF?usp=sharing)
-
-**Authors**: Enyu Yang, Qianyun Ding, Shuo Zhao, Cheng Xuan, Haihan Ye, Xiaowei Fan, Jun Cao+, Meiyu Fang+, Xianfeng Ding+ <a href="https://orcid.org/0000-0003-1119-3816" target="_blank"><img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png"></a>
-
-<p>
-  We used the Python (version 3.10.11) and PyCaret (version 3.0.0) to build the machine learning pipeline. The dataset was preprocessed, and we addressed the class imbalance issue using the Synthetic Minority Over-sampling Technique (SMOTE). We also used the MinMaxScaler from the sklearn (version 1.2.2) to normalize the selected features. The features used for model development included clinical characteristics such as age, gender, T stage, N stage, and M stage, as well as the expression levels of 20 invasion-associated genes. We trained and compared the performance of 15 classification algorithms to select the optimal model for predicting SKCM patient prognosis.
-</p>
+**Machine learning pipeline**: 
+We constructed a machine learning pipeline using Python (version 3.10.11) and PyCaret (version 3.0.0) in the TCGA-SKCM database. The dataset underwent preprocessing, employing the Synthetic Minority Over-sampling Technique (SMOTE) to address class imbalance. The selected features were normalized using the MinMaxScaler from scikit-learn (version 1.2.2). Model development incorporated features such as age, gender, T stage, N stage, M stage, and the expression levels of 20 invasion-associated genes. A trainset and testset ratio of 7:3 was used, and stratified ten-fold cross-validation was performed to assess the model's performance and robustness. We compared the performance of 15 classification algorithms to identify the optimal model for predicting SKCM patient prognosis. The machine learning pipeline was implemented in open-source Python code, and [interactive Google Colab notebooks](https://colab.research.google.com/drive/1PqikmkMxX1vdBiRFSEuL2ALBnTQL4gaF?usp=sharing) are available at https://github.com/EnyuY/IAGs-in-SKCM.
